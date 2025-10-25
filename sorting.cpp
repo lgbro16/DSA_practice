@@ -1,5 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
+void selection_sort(int arr[],int n ){
+for (int i = 0; i <= n - 2; i++)
+    {
+        for (int j = i; j <= n - 1; j++)
+        {
+            if (arr[i] > arr[j])
+            {
+                swap(arr[i], arr[j]);
+            }
+        }
+    }
+ cout << "THE SORTED ARRAY IS ::" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << endl;
+    }
+}
 int main()
 {
     int n;
@@ -11,21 +28,6 @@ int main()
     {
         cin >> arr[i];
     }
-    // Sorting the array::
-    for (int i = 0; i <= n - 2; i++)
-    {
-        for (int j = i; j <= n - 1; j++)
-        {
-            if (arr[i] > arr[j])
-            {
-                swap(arr[i], arr[j]);
-            }
-        }
-    }
-    cout << "THE SORTED ARRAY IS ::" << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << endl;
-    }
+   selection_sort(arr,n);
     return 0;
 }
