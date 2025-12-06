@@ -4,6 +4,8 @@ pour 1
 if y1+y2>x2 then: y2= y2 + (x2-y2)
 y1=y1-(x2-y2) , now if y3+y2>x3 then: y3= y3 + (x3-y3)
 y2=y2-(x3-y3)
+Z number of pours.....
+Cycle of 3 is repeated then : if z//3 = 0 cycle finished output same 
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -12,8 +14,7 @@ int main()
     int x1=10, x2=11, x3=12;
     int y1=3, y2=4, y3=5;
 
-       for (int  i = 0; i < count; i++)
-       {
+      
         if (y1 + y2 >= x2)
         {
             y2 = x2;
@@ -22,7 +23,7 @@ int main()
        else 
        {y2 = y2 + y1;
         y1 = 0;}
-       }
+       
         // if (y2 + y3 >= x3)
         // {   
         //     y2 = y2 - (x3-y3);
