@@ -10,39 +10,21 @@ Cycle of 3 is repeated then : if z//3 = 0 cycle finished output same
 #include <bits/stdc++.h>
 using namespace std;
 int main()
-{ 
-    int x1=10, x2=11, x3=12;
-    int y1=3, y2=4, y3=5;
-
-      
-        if (y1 + y2 >= x2)
-        {
-            y2 = x2;
-            y1 = y1 - (x2-y2);
+{ 	int t;
+	cin>>t;
+	for(int i; i< t;i++){
+	    int n,x;
+        int total;
+	    cin>>n>>x;
+	    int groups = n/6;
+	    if(n%6 > 0){
+          total = x * (groups+1);
         }
-       else 
-       {y2 = y2 + y1;
-        y1 = 0;}
-       
-        // if (y2 + y3 >= x3)
-        // {   
-        //     y2 = y2 - (x3-y3);
-        //     y3 = x3;
-            
-        // }
-        // else 
-        // {y3 = y2 + y3;
-        // y2 = 0;}
+        else{
+            total=x*groups;
+        }
+        cout<<total<<endl; 
+	}
 
-        // if (y1 + y3 >= x1)
-        // {
-        //     y3 = y3 - (x1-y1);
-        //     y1 = x1;
-            
-        // }
-        // else{y1 = y3 + y1;
-        // y3 = 0;}
-    
-   cout<<"THE MILK LEFT IN THE CONTAINERS ARE "<<y1<<" "<<y2<<" "<<y3<<endl;
-    return 0;
+   return 0;
 }
