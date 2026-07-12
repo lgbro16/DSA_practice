@@ -42,8 +42,7 @@ void pattern4(int x)
 }
 int main()
 {
-    int n;
-    cout << "Enter the input" << endl;
-    cin >> n;
-    pattern4(n);
+    
+   string s = "aka";char a =s[0];
+   cout<<a;
 }

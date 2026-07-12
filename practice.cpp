@@ -68,7 +68,7 @@ vector<int> unionfinder(vector<int> &nums1, vector<int> &nums2)
             }
             i++;
         }
-        if (nums1[i] >= nums2[j])
+        if (nums1[i] > nums2[j])
         {
             if (unionarr.size() == 0 || unionarr.back()!=nums2[j])
             {

@@ -59,6 +59,8 @@ int main(){
 // bool a=isPalindrome(-121)
 int n;
 cin>>n;
-divisors(n);
+vector<int> mp(12,0);
+cout<<mp.size();
+// divisors(n);
 return 0;
 }

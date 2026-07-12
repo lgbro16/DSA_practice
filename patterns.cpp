@@ -106,11 +106,15 @@ void fullpyramid(int x)
 }
 
 int main()
-{
-    int n;
-    cout << "Enter the input value" << endl;
-    cin >> n;
+{ 
+    // cout << "Enter the input value" << endl;
+    // cin >> n;
     // sqaure(n);
-    fullpyramid(n);
+    reversetri(10);
+    // for (int i = 0; i < hash.size(); i++)
+    // {
+    //     cout<<hash[i];
+    // }
+    
     return 0;
 }
